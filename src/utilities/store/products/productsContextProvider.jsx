@@ -14,7 +14,6 @@ const ProductsContextProvider = ({children}) => {
                 }
                 const fetchedProducts = await response.json();
                 setProducts(fetchedProducts);
-                console.log('use5')
             }
             catch(error){
                 toast.error(error.message(),{toastId:error.message});
