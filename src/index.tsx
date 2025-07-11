@@ -5,23 +5,16 @@ import App from './App';
 import ProductsContextProvider from './utilities/store/products/productsContextProvider';
 import SidebarContextProvider from './utilities/store/sidebar/sidebarContextProvider';
 import CartContextProvider from './utilities/store/cart/cartContextProvider';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
-  // <React.StrictMode>
-  <CartContextProvider>
-    <SidebarContextProvider>
-      <ProductsContextProvider>
-        <App />
-      </ProductsContextProvider>
-    </SidebarContextProvider>
-  </CartContextProvider>
-  
-    
-  
-    
-
-  
-   
-  // {/* </React.StrictMode> */}
+  <React.StrictMode>
+    <CartContextProvider>
+      <SidebarContextProvider>
+        <ProductsContextProvider>
+          <App />
+        </ProductsContextProvider>
+      </SidebarContextProvider>
+    </CartContextProvider>
+  </React.StrictMode>
 );
 
