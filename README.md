@@ -41,8 +41,8 @@ A modern, responsive e-commerce web application built with **React**, **TypeScri
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/ecommerce-app.git
-   cd ecommerce-app
+   git clone https://github.com/FadyAdel10/ecommerce.git
+   cd ecommerce
 2. **Install dependencies**
    ```bash
    npm install
